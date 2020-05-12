@@ -42,6 +42,13 @@ Find the file `index.js` and complete the tasks.
 Edit the `ReadMe` file with your answers.
 
 1. In your own words, define closure (1-2 sentences).
+
+
+*******************************************************
+Closure is caused when a inner function saves the scope chain of the parent  at the time that the parent function was executed, which allows for the accessing of the parent's variables. Closure is a way of making "private" variables possible.
+********************************************************
+
+
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -63,8 +70,32 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+
+
+*******************************************************
+The closure in this code is the `name` variable that gets console logged. I can tell that it is a closure because it is a child function being able to use the parent function's variable(s). 
+********************************************************
+
+
+
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+
+
+********************************************************
+Calling `dansRoll` any amount of times will keep the variable `name` the same each time. The only thing being changed is the `newRoll` variable which displays a new random number of 1-6 as a "dice" roll. There is the ability for `newRoll` will be the same when called twice, however the possibility of that is quite rare.
+********************************************************
+
+
+
 c. What is the lexical scope of `newRoll`? 
+
+********************************************************
+The lexical scope of `newRoll1` is inside of the child function
+********************************************************
+
+
+
+
 
 ### Task 3 - Stretch Goals
 
